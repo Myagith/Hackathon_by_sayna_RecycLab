@@ -1,0 +1,71 @@
+/* styles.css */
+
+/* styles.css */
+
+.signup-container {
+    
+        background-color: #008f4c; /* Vert vif ajusté */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; /* Augmentation de l'espace entre les éléments */
+        padding: 20px;
+        width: 80%; /* Augmentation de la largeur du formulaire */
+        max-width: 600px; /* Limitation de la largeur maximale */
+    }
+    
+    input {
+        width: 100%;
+        padding: 15px; /* Augmentation du padding */
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px; /* Augmentation de la taille de la police */
+    }
+    
+    input::placeholder {
+        color: #aaa;
+    }
+    
+    button {
+        grid-column: 1 / -1;
+        background-color: white;
+        color: #008f4c;
+        border: none;
+        padding: 15px; /* Augmentation du padding */
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 20px; /* Augmentation de la marge supérieure */
+        font-size: 16px; /* Augmentation de la taille de la police */
+    }
+    
+    h1 {
+        color: white;
+        font-size: 2.5em;
+        margin-bottom: 0;
+        grid-column: 1 / -1;
+    }
+    
+    h2 {
+        color: white;
+        font-size: 1.5em;
+        margin-top: 0;
+        margin-bottom: 20px;
+        grid-column: 1 / -1;
+    }
+    
+    /* Assurez-vous que ces éléments sont visibles maintenant */
+    form div:nth-child(n+5),
+    h1,
+    h2 {
+        display: block;
+    }

@@ -1,0 +1,33 @@
+/* CalendarPage.css */
+/* CalendarPage.css */
+
+.calendar-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Prendre toute la hauteur de la vue */
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #008f4c;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  

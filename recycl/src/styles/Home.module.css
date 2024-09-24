@@ -1,0 +1,54 @@
+/* HomePage.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logoHighlight {
+    color: green;
+  }
+  
+  .logoutBtn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .title, .subtitle {
+    text-align: center;
+  }
+  
+  .imageRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+  
+  .imagePlaceholder {
+    width: 30%;
+    height: 200px;
+    background-color: #ddd;
+  }
+  
+  .missionText {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }

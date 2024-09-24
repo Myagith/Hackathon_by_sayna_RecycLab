@@ -1,5 +1,4 @@
-/* section Historique */
-main{
+main {
     padding: 20px;
     text-align: none;
 }
@@ -11,6 +10,7 @@ main{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 0 auto;
+    margin-left: 60px;
 }
 
 .historique-item{

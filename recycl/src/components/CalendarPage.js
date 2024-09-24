@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
+import { Link } from 'react-router-dom'; 
+import styles from '../styles/Home.module.css';
 import '../styles/CalendarPage.css'; // Fichier CSS pour styliser la page
 import 'react-calendar/dist/Calendar.css'; // Styles spécifiques au calendrier
-import styles from '../styles/Home.module.css';
+
 
 const CalendarPage = () => {
   const [date, setDate] = useState(new Date());
@@ -18,6 +20,17 @@ const CalendarPage = () => {
         <div className={styles.logo}>
           <span className={styles.logoHighlight}>R</span>ecycLab
         </div>
+
+        <nav className={styles.nav}>
+          <ul className={styles.navList}>
+            <li className={styles.navItem}><Link to="/">Accueil</Link></li>
+            <li className={styles.navItem}><Link to="/Signaler">Signaler</Link></li>
+            <li className={styles.navItem}><Link to="/Historique">Historique</Link></li>
+            <li className={styles.navItem}><Link to="/calendar">Calendrier</Link></li>
+            <li className={styles.navItem}><Link to="/avis">Avis d'utilisateur</Link></li>
+          </ul>
+        </nav>
+
         <button className={styles.logoutBtn}>Déconnexion</button>
       </header>
     <div className="calendar-page">

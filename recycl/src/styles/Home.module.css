@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    height: 400px;
   }
   
   .header {
@@ -30,7 +31,9 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
+  .missionText {
+    height: 100px;
+  }
   .title, .subtitle {
     text-align: center;
   }

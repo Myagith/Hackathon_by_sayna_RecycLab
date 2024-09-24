@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import image1 from '../images/image1.jpg'; 
 import image2 from '../images/image2.jpg'; 
 import image4 from '../images/image4.jpg'; 
+import Footer from '../pages/Footer'; 
 
 
 const HomePage = () => {
@@ -25,7 +26,9 @@ const HomePage = () => {
           </ul>
         </nav>
 
-        <button className={styles.logoutBtn}>Déconnexion</button>
+        <Link to="/Login">
+          <button className={styles.logoutBtn}>Connexion</button>
+        </Link>
       </header>
       <main>
         <h1 className={styles.title}>Ensemble pour un avenir plus propre !</h1>
@@ -46,7 +49,9 @@ const HomePage = () => {
           vous contribuez à préserver notre planète pour les générations futures.
         </p>
       </main>
+      <Footer />
     </div>
+
   );
 };
 

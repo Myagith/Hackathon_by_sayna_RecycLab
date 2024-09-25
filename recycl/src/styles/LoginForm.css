@@ -1,87 +1,104 @@
-.login-container {
+/* Conteneur principal pour la page de connexion */
+.login-page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  min-height: 100vh; 
+  background-color: #f0f0f0; 
+  font-family: Arial, sans-serif; 
+  padding: 20px;
 }
 
-.login-title {
-  font-size: 24px;
+/* Titre de la page de connexion */
+.login-page-title {
+  font-size: 32px; 
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
   color: #333;
 }
 
-.login-form-container {
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-}
-
-.login-form {
+/* Formulaire de connexion */
+.login-page-form {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  padding: 40px; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; 
 }
 
-.form-group {
-  margin-bottom: 20px;
+/* Chaque groupe de champs dans le formulaire */
+.login-form-group {
+  margin-bottom: 25px; 
 }
 
-.form-group label {
+/* Libellé de chaque champ */
+.login-form-group label {
   display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 18px; 
   color: #555;
 }
 
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
+/* Champ d'entrée de texte */
+.login-form-group input {
+  width: 100%; 
+  padding: 15px; 
+  border: 1px solid #ddd; 
+  border-radius: 6px; 
+  font-size: 20px; 
+  box-sizing: border-box; 
+  height: 50px; 
 }
 
-.login-button {
+/* Bouton de connexion */
+.login-page-button {
   width: 100%;
-  padding: 12px;
-  background-color: #00c853;
+  padding: 15px; 
+  background-color: #00c853; 
   color: white;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 6px; 
+  font-size: 18px; 
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.login-button:hover {
-  background-color: #00a84d;
+
+.login-page-button:hover {
+  background-color: #00a84d; 
 }
 
-.form-links {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 14px;
+
+.login-form-links {
+  margin-top: 30px; /* Espace au-dessus de la section des liens */
+  display: flex; /* Utilise Flexbox pour la mise en page */
+  justify-content: center; /* Centre les éléments */
+  align-items: center; /* Aligne les éléments au centre verticalement */
+  font-size: 16px; /* Taille de la police des liens */
 }
 
-.create-account, .forgot-password {
+.login-create-account,
+.login-forgot-password {
   color: #00c853;
   text-decoration: none;
+  margin: 0 60px; /* Ajoute de la marge entre les liens */
 }
 
-.create-account:hover, .forgot-password:hover {
+/* Séparateur entre les deux liens */
+.login-link-separator {
+  margin: 0 10px; /* Espace autour du séparateur */
+  color: #999;
+}
+
+
+.login-create-account:hover, .login-forgot-password:hover {
   text-decoration: underline;
 }
 
-.link-separator {
-  margin: 0 10px;
-  color: #999;
-}
+

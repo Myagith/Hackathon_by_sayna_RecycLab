@@ -1,0 +1,20 @@
+.mapContainer {
+    border: 2px solid #4CAF50; /* Bordure verte autour de la carte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour de la carte */
+    overflow: hidden; /* Pour que les coins arrondis fonctionnent */
+    margin: 10px; /* Marges pour espacer de l'extérieur */
+    margin-top: 200px;
+  }
+  
+  .popup {
+    font-size: 14px; /* Taille de police pour le popup */
+    color: #333; /* Couleur du texte */
+  }
+  
+  .marker {
+    background-color: #ff5722; /* Couleur de fond du marqueur */
+    border-radius: 50%; /* Marqueur rond */
+    border: 2px solid white; /* Bordure blanche autour du marqueur */
+  }
+  

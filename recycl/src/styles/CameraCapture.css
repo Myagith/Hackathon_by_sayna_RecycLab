@@ -1,0 +1,52 @@
+.camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 80%;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    position: relative; /* Pour positionner le bouton de capture */
+    align-items: center;
+     
+     margin-top: -80px;
+}
+
+.webcam {
+    border: 5px solid white; /* Bordure blanche autour de la caméra */
+    border-radius: 10px; /* Coins arrondis */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+.capture-button {
+    background-color: #ff4757; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 18px; /* Taille du texte */
+    cursor: pointer; /* Curseur en main */
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+.capture-button:hover {
+    background-color: #ff6b81; /* Couleur au survol */
+}
+
+
+.captured-image-container {
+    margin-top: 20px;
+}
+
+.captured-image {
+    width: 100%; /* Adapter la taille de l'image capturée */
+    max-width: 400px; /* Limiter la largeur maximale */
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.confirm-button, .retake-button {
+    margin-right: 10px; /* Espacement entre les boutons */
+}

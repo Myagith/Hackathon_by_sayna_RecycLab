@@ -19,7 +19,7 @@ const HomePage = () => {
         <nav className={styles.nav}>
           <ul className={styles.navList}>
             <li className={styles.navItem}><Link to="/">Accueil</Link></li>
-            <li className={styles.navItem}><Link to="/Signaler">Signaler</Link></li>
+            <li className={styles.navItem}><Link to="/Signalpage">Signaler</Link></li>
             <li className={styles.navItem}><Link to="/Historique">Historique</Link></li>
             <li className={styles.navItem}><Link to="/calendar">Calendrier</Link></li>
             <li className={styles.navItem}><Link to="/avis">Avis d'utilisateur</Link></li>

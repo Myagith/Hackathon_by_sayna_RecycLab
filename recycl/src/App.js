@@ -5,8 +5,12 @@ import LoginPage from './pages/LoginPage';
 import SignupForm from './pages/SignupForm'; 
 import CalendarPage from './components/CalendarPage';
 import Historique from './pages/Historique';
-import Signaler from './pages/Signaler';
+import SignalPage from './components/SignalPage';
 import Avis from './pages/Avis';
+import CameraCapture from './pages/CameraCapture';
+import LocationPicker from './pages/LocationPicker';
+import DescriptionForm from './pages/DescriptionForm';
+
 
 function App() {
   return (
@@ -17,8 +21,11 @@ function App() {
         <Route path="/signup" element={<SignupForm />} />
         <Route path="/calendar" element={<CalendarPage />} /> 
         <Route path="/historique" element={<Historique />} />
-        <Route path="/signaler" element={<Signaler />} /> 
+        <Route path="/Signalpage" element={<SignalPage/>} />
         <Route path="/avis" element={<Avis />} /> 
+        <Route path="/CameraCapture" element={<CameraCapture/>}/>
+        <Route path="/LocationPicker" element={<LocationPicker/>}/>
+        <Route path="/DescriptionForm" element={<DescriptionForm/>}/>
       </Routes>
     </Router>
   );

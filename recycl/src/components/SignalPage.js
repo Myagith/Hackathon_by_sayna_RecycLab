@@ -4,6 +4,7 @@ import DescriptionForm from '../pages/DescriptionForm';
 import LocationPicker from "../pages/LocationPicker";
 import { Link } from 'react-router-dom'; 
 import styles from '../styles/Home.module.css';
+import   '../styles/signal.css';
 
 const SignalPage = () => {
     const [location, setLocation] = useState(null);

@@ -102,3 +102,9 @@
 }
 
 
+.social-logo {
+  width: 50px; /* Ajustez la taille selon vos préférences */
+  height: auto; /* Maintient le ratio */
+  margin-right: 8px; /* Espace entre le logo et le texte */
+  vertical-align: middle; /* Aligne le logo au centre */
+}

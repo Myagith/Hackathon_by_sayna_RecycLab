@@ -31,7 +31,9 @@ const CalendarPage = () => {
           </ul>
         </nav>
 
-        <button className={styles.logoutBtn}>Déconnexion</button>
+        <Link to="/Login">
+          <button className={styles.logoutBtn}>Connexion</button>
+        </Link>
       </header>
     <div className="calendar-page">
       

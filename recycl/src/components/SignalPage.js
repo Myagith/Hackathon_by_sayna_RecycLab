@@ -37,13 +37,13 @@ const SignalPage = () => {
                 </Link>
             </header>
 
-            <div>
+            <div className="signalpag">
                 <h1>Signalement de Décharge</h1>
                 <CameraCapture onCapture={setImage} />
                 <DescriptionForm onSubmit={handleSubmit} />
                 <LocationPicker setLocation={setLocation} />
                 {image && <img src={image} alt="Captured" />}
-                <button onClick={handleSubmit}>Envoyer le Signalement</button>
+                <button onClick={handleSubmit} className="envok">Envoyer le Signalement</button>
             </div>
         </div>
     );

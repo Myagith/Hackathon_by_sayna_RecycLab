@@ -18,4 +18,6 @@ Ce projet vise à améliorer la gestion des déchets au sein de notre communaut�
 Merci a tous ceux qui ont participer aux projet.
 Ensemble, faisons la différence dans la gestion des déchets ! 🌍♻️
 
+# Le code source de notre projet est accessible dans la branche spécifiquement dédiée à cet effet.
+
 TEAM RECYCLAB( COTE D'IVOIRE )

@@ -14,7 +14,6 @@ Ce projet vise à améliorer la gestion des déchets au sein de notre communaut�
 - Sensibiliser la Communauté : Éduquer le public sur les impacts environnementaux des déchets et les bonnes pratiques.
 
 *Remerciement
-
 Merci a tous ceux qui ont participer aux projet.
 Ensemble, faisons la différence dans la gestion des déchets ! 🌍♻️
 

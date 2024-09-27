@@ -1,4 +1,5 @@
-** RecycLab
+** PROJET RECYCLAB
+
 Tout d'abord, nous tenons à nous excuser auprès des amateurs de lecture, car nous avons choisi de présenter nos différents livrables sous forme de vidéo. Ce format permet à un public plus large d'accéder facilement à notre présentation.
 
 *Description du projet

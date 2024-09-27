@@ -1,0 +1,63 @@
+.bodycode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.compte-flot {
+    background-color: green;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.form-container {
+    margin-top: 3px;
+}
+
+h2 {
+    margin: 0; /* Supprime l'espacement supplémentaire entre les lignes */
+}
+
+.code-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h1 {
+    margin-top: -50px;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black; /* Rectangle noir */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgray; /* Couleur au survol */
+}

@@ -1,110 +1,108 @@
-/* Conteneur principal pour la page de connexion */
-.login-page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; 
-  background-color: #f0f0f0; 
-  font-family: Arial, sans-serif; 
-  padding: 20px;
+/* LoginForm.css */
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-/* Titre de la page de connexion */
-.login-page-title {
-  font-size: 32px; 
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #333;
+.card-body {
+  padding: 1.5rem;
 }
 
-/* Formulaire de connexion */
-.login-page-form {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 40px; 
-  border-radius: 12px; 
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px; 
+h3 {
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Chaque groupe de champs dans le formulaire */
-.login-form-group {
-  margin-bottom: 25px; 
+.form-control {
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Libellé de chaque champ */
-.login-form-group label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 18px; 
-  color: #555;
+.form-label {
+  color: #666666;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
 }
 
-/* Champ d'entrée de texte */
-.login-form-group input {
-  width: 100%; 
-  padding: 15px; 
-  border: 1px solid #ddd; 
-  border-radius: 6px; 
-  font-size: 20px; 
-  box-sizing: border-box; 
-  height: 50px; 
-}
-
-/* Bouton de connexion */
-.login-page-button {
-  width: 100%;
-  padding: 15px; 
-  background-color: #00c853; 
-  color: white;
+.btn-primary {
+  background-color: #508bfc;
   border: none;
-  border-radius: 6px; 
-  font-size: 18px; 
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
 }
 
-
-.login-page-button:hover {
-  background-color: #00a84d; 
+.btn-primary:hover {
+  background-color: #3a6fd8;
 }
 
+.login-social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.login-social-buttons .btn {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.social-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
 
 .login-form-links {
-  margin-top: 30px; /* Espace au-dessus de la section des liens */
-  display: flex; /* Utilise Flexbox pour la mise en page */
-  justify-content: center; /* Centre les éléments */
-  align-items: center; /* Aligne les éléments au centre verticalement */
-  font-size: 16px; /* Taille de la police des liens */
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .login-create-account,
 .login-forgot-password {
-  color: #00c853;
+  color: #508bfc;
   text-decoration: none;
-  margin: 0 60px; /* Ajoute de la marge entre les liens */
 }
 
-/* Séparateur entre les deux liens */
-.login-link-separator {
-  margin: 0 10px; /* Espace autour du séparateur */
-  color: #999;
-}
-
-
-.login-create-account:hover, .login-forgot-password:hover {
+.login-create-account:hover,
+.login-forgot-password:hover {
   text-decoration: underline;
 }
 
+.autre {
+  color: #666666;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  text-align: center;
+}
 
-.social-logo {
-  width: 50px; /* Ajustez la taille selon vos préférences */
-  height: auto; /* Maintient le ratio */
-  margin-right: 8px; /* Espace entre le logo et le texte */
-  vertical-align: middle; /* Aligne le logo au centre */
+.form-check-label {
+  color: #666666;
+  font-size: 0.8rem;
+}
+
+.form-check {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
 }

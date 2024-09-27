@@ -35,50 +35,71 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="login-page-container">
-      <h2>Connexion</h2>
+    <section className="vh-100" style={{ backgroundColor: '#508bfc' }}>
+      <div className="container py-5 h-100">
+        <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div className="card shadow-2-strong" style={{ borderRadius: '1rem' }}>
+              <div className="card-body p-5 text-center">
+                <h3 className="mb-5">Se connecter</h3>
 
-      <form className="login-page-form">
-        <div className="login-form-group">
-          <label htmlFor="identifier">Adresse e-mail ou numéro de téléphone</label>
-          <input
-            type="text"
-            id="identifier"
-            placeholder="Entrez votre email ou numéro de téléphone"
-          />
+                <form className="login-page-form">
+                  <div className="form-outline mb-4">
+                    <input
+                      type="text"
+                      id="identifier"
+                      className="form-control form-control-lg"
+                      placeholder="Entrez votre email ou numéro de téléphone"
+                    />
+                    <label className="form-label" htmlFor="identifier">Adresse e-mail ou numéro de téléphone</label>
+                  </div>
+                  <div className="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="password"
+                      className="form-control form-control-lg"
+                      placeholder="Entrez votre mot de passe"
+                    />
+                    <label className="form-label" htmlFor="password">Mot de passe</label>
+                  </div>
+                  <div className="form-check d-flex justify-content-start mb-4">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="form1Example3"
+                    />
+                    <label className="form-check-label" htmlFor="form1Example3">
+                      Se souvenir du mot de passe
+                    </label>
+                  </div>
+
+                  <button type="submit" className="btn btn-primary btn-lg btn-block">Se connecter</button>
+                </form>
+
+                <hr className="my-4" />
+                <div className='autre'>Ou connectez-vous avec</div>
+                <div className="login-social-buttons">
+                  <button className="btn btn-lg btn-block btn-primary" onClick={handleGoogleLogin} style={{ backgroundColor: '#dd4b39' }}>
+                    <img src={googleLogo} alt="Google" className="social-logo me-2" />
+                    Se connecter avec Google
+                  </button>
+                  <button className="btn btn-lg btn-block btn-primary" onClick={handleFacebookLogin} style={{ backgroundColor: '#3b5998' }}>
+                    <img src={facebookLogo} alt="Facebook" className="social-logo me-2" />
+                    Se connecter avec Facebook
+                  </button>
+                </div>
+
+                <div className="login-form-links mt-3">
+                  <Link to="/signup" className="login-create-account">Créer un compte ?</Link>
+                  <span className="login-link-separator">•</span>
+                  <Link to="/forgot-password" className="login-forgot-password">Mot de passe oublié ?</Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="login-form-group">
-          <label htmlFor="password">Mot de passe</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Entrez votre mot de passe"
-          />
-        </div>
-        <button type="submit" className="login-page-button">
-          Se connecter
-        </button>
-      </form>
-
-      <div className="login-social-buttons">
-        <button className="login-google-button" onClick={handleGoogleLogin}>
-          <img src={googleLogo} alt="Google" className="social-logo" /> {/* Logo Google */}
-        </button>
-        <button className="login-facebook-button" onClick={handleFacebookLogin}>
-          <img src={facebookLogo} alt="Facebook" className="social-logo" /> {/* Logo Facebook */}
-        </button>
       </div>
-
-      <div className="login-form-links">
-        <Link to="/signup" className="login-create-account">
-          Créer un compte ?
-        </Link>
-        <span className="login-link-separator">•</span>
-        <Link to="/forgot-password" className="login-forgot-password">
-          Mot de passe oublié ?
-        </Link>
-      </div>
-    </div>
+    </section>
   );
 };
 

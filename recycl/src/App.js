@@ -10,6 +10,7 @@ import Avis from './pages/Avis';
 import CameraCapture from './pages/CameraCapture';
 import LocationPicker from './pages/LocationPicker';
 import DescriptionForm from './pages/DescriptionForm';
+import CodeGestion from './pages/CodeGestion';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         <Route path="/CameraCapture" element={<CameraCapture/>}/>
         <Route path="/LocationPicker" element={<LocationPicker/>}/>
         <Route path="/DescriptionForm" element={<DescriptionForm/>}/>
+        <Route path="/Codegestion" element={<CodeGestion />} />
+
       </Routes>
     </Router>
   );

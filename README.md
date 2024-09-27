@@ -20,4 +20,4 @@ Ensemble, faisons la différence dans la gestion des déchets ! 🌍♻️
 
 Le code source de notre projet est accessible dans la branche spécifiquement dédiée à cet effet.
 
-TEAM RECYCLAB( COTE D'IVOIRE )
+TEAM RECYCLAB ( COTE D'IVOIRE )

@@ -76,18 +76,19 @@ const LoginPage = () => {
                   <button type="submit" className="btn btn-primary btn-lg btn-block">Se connecter</button>
                 </form>
 
-                <hr className="my-4" />
+                <hr className="my-4"/>
                 <div className='autre'>Ou connectez-vous avec</div>
                 <div className="login-social-buttons">
-                  <button className="btn btn-lg btn-block btn-primary" onClick={handleGoogleLogin} style={{ backgroundColor: '#dd4b39' }}>
-                    <img src={googleLogo} alt="Google" className="social-logo me-2" />
-                    Se connecter avec Google
-                  </button>
-                  <button className="btn btn-lg btn-block btn-primary" onClick={handleFacebookLogin} style={{ backgroundColor: '#3b5998' }}>
-                    <img src={facebookLogo} alt="Facebook" className="social-logo me-2" />
-                    Se connecter avec Facebook
-                  </button>
-                </div>
+  <button className="btn btn-lg btn-block btn-primary" onClick={handleGoogleLogin} style={{ backgroundColor: '#dd4b39', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <img src={googleLogo} alt="Google" className="social-logo me-2" style={{ marginRight: '10px', height: '24px' }} />
+    Se connecter avec Google
+  </button>
+  <button className="btn btn-lg btn-block btn-primary" onClick={handleFacebookLogin} style={{ backgroundColor: '#3b5998', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <img src={facebookLogo} alt="Facebook" className="social-logo me-2" style={{ marginRight: '10px', height: '24px' }} />
+    Se connecter avec Facebook
+  </button>
+</div>
+
 
                 <div className="login-form-links mt-3">
                   <Link to="/signup" className="login-create-account">Créer un compte ?</Link>

@@ -49,10 +49,11 @@ h3 {
 }
 
 .login-social-buttons {
-  display: flex;
+ 
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;
+  
 }
 
 .login-social-buttons .btn {
@@ -61,10 +62,12 @@ h3 {
 }
 
 .social-logo {
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 20px;
   object-fit: contain;
   margin-right: 0.5rem;
+  margin-left: 5px;
+ 
 }
 
 .login-form-links {
@@ -106,3 +109,4 @@ h3 {
     padding: 1rem;
   }
 }
+
